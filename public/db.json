@@ -1,0 +1,76 @@
+{
+    "movieshub": [
+        {
+            "id": 1,
+            "movie_name": "Terminator1",
+            "movie_language": "English",
+            "movie_rating": 8,
+            "movie_year": 1984,
+            "movie_director": "James Cameron",
+            "movie_genre": "Action",
+            "movie_runtime": "1h 47m",
+            "movie_actors":"Arnold Schwarzenegger, Linda Hamilton, Micheal Biehn",
+            "movie_released":"True"
+        },
+        {
+            "id": 2,
+            "movie_name": "Terminator2",
+            "movie_language": "English",
+            "movie_rating": 8,
+            "movie_year": 1991,
+            "movie_director": "James Cameron",
+            "movie_genre": "Action",
+            "movie_runtime": "2h 17m",
+            "movie_actors":"Arnold Schwarzenegger, Linda Hamilton,Edward Furlong",
+            "movie_released":"True"
+        },
+        {
+            "id": 3,
+            "movie_name": "RRR",
+            "movie_language": "Telugu",
+            "movie_rating": 8,
+            "movie_year": 2022,
+            "movie_director": "Rajamouli",
+            "movie_genre": "Action, Drama",
+            "movie_runtime": "3h 7m",
+            "movie_actors":"Jr.N.T.Rama Rao, Ram Charan, Alia Bhat, Olivia Morriss",
+            "movie_released":"True"
+        },
+        {
+            "id": 4,
+            "movie_name": "Pushpa1",
+            "movie_language": "Telugu",
+            "movie_rating": 7,
+            "movie_year": 2021,
+            "movie_director": "Sukumar",
+            "movie_genre": "Action, Crime, Drama, Thriller",
+            "movie_runtime": "2h 59m",
+            "movie_actors":"Allu Arjun, Rashmika",
+            "movie_released":"True"
+        },
+        {
+            "id": 5,
+            "movie_name": "Pushpa2",
+            "movie_language": "Telugu",
+            "movie_rating": 9,
+            "movie_year": 2024,
+            "movie_director": "Sukumar",
+            "movie_genre": "Action, Thriller",
+            "movie_runtime": "3hr 15m",
+            "movie_actors":"Allu Arjun, Rashmika",
+            "movie_released":"False"
+        },
+        {
+            "id": 6,
+            "movie_name": "Meesaya Murukku",
+            "movie_language": "Tamil",
+            "movie_rating": 8,
+            "movie_year": 2017,
+            "movie_director": "Hiphop Tamizha Adhi",
+            "movie_genre": "Biography, Comedy, Drama, Music",
+            "movie_runtime": "2h 16m",
+            "movie_actors":"Hiphop Tamizha Adhi, Aathmika",
+            "movie_released":"True"
+        }
+    ]
+}
