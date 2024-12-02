@@ -11,8 +11,8 @@ const server = http.createServer((req, res) => {
             const js = (JSON.stringify(results));
             console.log(js);
             res.setHeader("Access-Control-Allow-Origin", '*');
-            res.writeHead(200, {'Content-type': 'application/json'});
-            res.writableLength(js);
+            res.writeHead(200, {'Content-Type': 'application/json'});
+            res.end(js);
         };
         async function main() {
             const uri = "mongodb+srv://jessykattupalli:Yssej%798135@cluster0.m0npo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
@@ -57,7 +57,7 @@ const server = http.createServer((req, res) => {
                         contentType = "text/javascript";
                         break;
                     case '.json':
-                        contentType = "apllication/json";
+                        contentType = "application/json";
                         break;
                     case '.html':
                         contentType = "text/html";
