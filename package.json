@@ -1,0 +1,14 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Final Project Node folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jessy",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.11.0"
+  }
+}
