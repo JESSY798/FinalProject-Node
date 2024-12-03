@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
             res.end(js);
         };
         async function main() {
-            const uri = "mongodb+srv://jessykattupalli:Yssej%798135@cluster0.m0npo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+            const uri = "mongodb+srv://jessykattupalli:yssej123@cluster0.m0npo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
             const client = new MongoClient(uri);
             try{
                 //Connect to the MongoDB Cluster
