@@ -1,71 +1,206 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.navigation{
-    list-style-type: none;
-    background-color:#154360;
-    position: fixed;
+body {
+    background-color: #ecf0f1;
     text-align: center;
-    width: 100%;
-    top: 0;
-    height: 45px;
+    padding: 10px;
 }
-.navigation li{
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav nav nav nav"
+    "image profile profile profile"
+    "work work work work"
+    "skills skills education education"
+    "projects projects blogs blogs"
+    "footer footer footer footer"
+    ;
+    
+    margin: 0 auto;
+    color: black;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.nav-bar{
+    background-color: #154360;
+    grid-area: nav;
+    padding: 10px;
+}
+.nav-bar a {
     display: inline-block;
-}
-.navigation li a{
-    display: block;
-    text-align: center;
-    padding: 10px 45px 15px 45px;
-    color: white;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 30px;
+    
     text-decoration: none;
-    font-size:18px;
+}
+#about-image-container{
+    display: contents;
 }
 #image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 100px;
+    grid-area: image;
+    background-color: #ecf0f1;
+    padding: 20px;
+    width: 310px;
 }
-.main{
-    margin-top: 47px;
+#image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0;
+}
+#profile{
+    grid-area: profile;
+    background-color: #ecf0f1;
+    height: auto;
+    padding-top: 10px;
+}
+#work{
+    grid-area: work;
+    background-color: #a9cce3;
+    padding: 20px;
+    margin: 10px 0;
+}
+#skills {
+    grid-area: skills;
+    background-color: #e1dedd;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
-.left{
-    float: left;
-    width: 35%;
-    background-color:#154360;
-    padding: 5px;
-    border-radius: 15px;
-    color: white;
-    margin-left: 5px;
+#education {
+    grid-area: education;
+    background-color: #e1dedd;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 1px;
 }
-.right{
+#projects {
+    grid-area: projects;
+    background-color: #fdebd0;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#blogs {
+    grid-area: blogs;
+    background-color: #fdebd0;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 1px;
+}
+#edu{
     display: inline-block;
-    width: 60%;
+    margin: 10px 20px;
+    padding: 20px;
 }
-#line{
-    height: 1px;
-    background-color: white;
-    width: 95%;
-    margin-top: 5px;
+
+
+
+h1, h4{
+    margin: 0px;
+    text-align: center;
+    color: black;
 }
-#line1{
-    height: 3px;
-    background-color: rgb(45, 45, 45);
-    margin-top: 5px;
-    width: 100%;
-}
-.contact{
-    margin-left: 10px;
+h3{
+    margin: 0px;
 }
 .contact li{
     margin: 8px;
 }
-.profile{
-    margin-top: 20px;
-    margin-left: 20px;
+#line1{
+    height: 1px;
+    background-color: black;
 }
+
+#workp{
+    margin: 5px 0px 5px 50px;
+    
+}
+#menu-icon{
+    position: fixed;
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+footer {
+    grid-area: footer;
+    background-color: #154360;
+    padding: 20px;
+    color: #ffffff;
+}
+#icon{
+    font-size: 30px;
+    margin-right: 180px;
+    margin-top: 20px;
+}
+#icon1{
+    font-size: 30px;
+    
+    margin-top: 20px; 
+}
+#education:target, #projects:target, #experience:target, #blogs:target, #contact:target, #profile:target{
+    background-color: #777d7e;
+}
+.nav-bar .menu-icon{
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+    .container {
+        
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "image"
+            "profile"
+            "work"
+            "skills"
+            "education"
+            "projects"
+            "blogs"
+            "footer"
+        ;
+    }
+   
+    
+    
+    .nav-bar a:not(.menu-icon) {
+        display: none;
+    }
+
+    .nav-bar a.menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .nav-bar.responsive a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        background-color: #154360;
+        border-top: 1px solid #ffffff;
+    }
+
+
+    .nav-bar.responsive a.menu-icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    
+    #image {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    
+
+}
+
